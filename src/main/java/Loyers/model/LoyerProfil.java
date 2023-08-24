@@ -25,4 +25,5 @@ public class LoyerProfil implements Serializable {
 	private String prenom;
 	private String email;
 	private String pwd;
+	//
 }
