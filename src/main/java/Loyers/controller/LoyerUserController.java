@@ -36,6 +36,7 @@ public class LoyerUserController {
 	@PutMapping("/updateLoyersUser/{id}")
 	public LoyerUser update(@PathVariable(name = "id") Long id, @RequestBody LoyerUser loyerUser) {
 		loyerUser.setId(id);
+		//this is return line update
 		return loyersUserRepository.save(loyerUser);
 	}
 
