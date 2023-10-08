@@ -42,6 +42,7 @@ public class LoyerUserController {
 
 	@PostMapping("/addLoyersUser")
 	public LoyerUser save(@RequestBody LoyerUser loyerUser) {
+		//this is return line save
 		return loyerUserService.AddLoyerUser(loyerUser);
 	}
 
