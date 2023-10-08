@@ -29,6 +29,7 @@ public class LoyerUserController {
 
 	@GetMapping("/listLoyersUser/{id}")
 	public LoyerUser oyersUser(@PathVariable(name = "id") long id) {
+		//this is return line foroyersUser
 		return loyerUserService.searchById(id);
 	}
 
