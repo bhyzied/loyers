@@ -29,14 +29,14 @@ public class LoyerUserController {
 
 	@GetMapping("/listLoyersUser/{id}")
 	public LoyerUser oyersUser(@PathVariable(name = "id") long id) {
-		// comment return with oyersUser
+		//this is return line foroyersUser
 		return loyerUserService.searchById(id);
 	}
 
 	@PutMapping("/updateLoyersUser/{id}")
 	public LoyerUser update(@PathVariable(name = "id") Long id, @RequestBody LoyerUser loyerUser) {
 		loyerUser.setId(id);
-		// comment return with update
+		//this is return line update
 		return loyersUserRepository.save(loyerUser);
 	}
 
